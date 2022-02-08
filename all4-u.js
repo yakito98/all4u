@@ -46,3 +46,17 @@ function share_messages(){
         
     };
 };
+//鏃跺厜鏈哄浘鐗�
+function crossimg(){
+    jQuery(document).ready(function($){
+        $(".cross-excerpt img").each(function(){
+            var _a = $("").attr("href",this.src);
+            var element = document.createElement("a");
+            $(element).attr("data-fancybox", "images");
+            $(element).attr("href", $(this).attr("src"));
+            $(this).wrap(element);
+        })
+        let elements = document.querySelectorAll(".cross-excerpt img");
+        elements.forEach(element=>element.classList.toggle("cross-imgg"));
+    });
+};
