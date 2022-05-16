@@ -1,7 +1,4 @@
 @charset "utf-8";
-  *, ::after, ::before {
-  box-sizing:border-box;
-}
 
 .mood_post {
     display: flex;
