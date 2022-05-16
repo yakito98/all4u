@@ -3397,7 +3397,7 @@ pre[class*="language-"] {
 }
 
 .match .match_bg {
-  background-color:var(--white);
+  background-color: hsl(0deg 0% 100% / 80%);
 }
 
 .match .text-primary,
