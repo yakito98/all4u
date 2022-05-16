@@ -1663,12 +1663,28 @@ i {
 }
 
 .song ol {
-  list-style:decimal;
-  padding:5px 20px;
-  border:1px solid #aaa;
-  border-radius:3px;
-  padding-left:35px;
-  margin:30px 0;
+  margin-top: 0.4rem;
+  list-style: none;
+  counter-reset: ol-li;
+}
+
+.song ol li:before {
+    display: block;
+    float: left;
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    margin: 4px 12px 0 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #49b1f5;
+    border-radius: 50%;
+    text-align: center;
+    content: counter(ol-li);
+    counter-increment: ol-li;
+    transition: all .5s;
 }
 
 .song ol li,
