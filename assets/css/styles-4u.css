@@ -1841,7 +1841,7 @@ i {
 
 pre[class*=language-].line-numbers>code {
   white-space:inherit;
-  padding-left:calc(3em + 10px);
+  padding-left:calc(3em + -9px);
 }
 
 .song .line-numbers .line-numbers-rows {
